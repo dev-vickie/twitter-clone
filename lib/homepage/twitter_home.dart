@@ -14,7 +14,7 @@ class _TwitterHomeState extends State<TwitterHome> {
       appBar: AppBar(
         backgroundColor: Colors.blue,
         title: const Text(
-          "Twitter",
+          "Twitter Home",
           style: TextStyle(
             color: Colors.white,
             fontSize: 30,
