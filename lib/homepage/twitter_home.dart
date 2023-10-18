@@ -35,23 +35,31 @@ class _TwitterHomeState extends State<TwitterHome> {
         ],
         leading: const Icon(Icons.person),
       ),
-      body: ListView.builder(
-        itemCount: 2,
-        itemBuilder: (context, index) {
-          return Container(
+      body: ListView(
+        children: [
+          Container(
             margin: const EdgeInsets.all(10),
             color: Colors.black,
             height: 150,
             width: MediaQuery.of(context).size.width,
-            child: Center(
-              child: Container(
-                height: 100,
-                width: 100,
-                color: Colors.white,
-              ),
-            ),
-          );
-        },
+            child: Image.asset("assets/image1.jpeg"),
+          ),
+          Container(
+            margin: const EdgeInsets.all(10),
+            color: Colors.black,
+            height: 150,
+            width: MediaQuery.of(context).size.width,
+            child: Image.asset("assets/image2.png"),
+          ),
+          Container(
+            margin: const EdgeInsets.all(10),
+            color: Colors.black,
+            height: 150,
+            width: MediaQuery.of(context).size.width,
+            child: Image.network(
+                "https://www.foodandwine.com/thmb/Z2AE53BGYP2U-kXhtbVwXZQX8sc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Perfect-Sandwich-Bread-FT-RECIPE0723-dace53e15a304942acbc880b0ae34f5a.jpg"),
+          )
+        ],
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
